@@ -50,15 +50,15 @@
 
 
     /* Countdown Timer - The Final Countdown */
-	$('#clock').countdown('2020/12/27 08:50:56') /* change here your "countdown to" date */
-	.on('update.countdown', function(event) {
-		var format = '<span class="counter-number">%D<br><span class="timer-text">Days</span></span><span class="counter-number">%H<br><span class="timer-text">Hours</span></span><span class="counter-number">%M<br><span class="timer-text">Minutes</span></span><span class="counter-number">%S<br><span class="timer-text">Seconds</span></span>';
-		$(this).html(event.strftime(format));
-	})
-	.on('finish.countdown', function(event) {
-	$(this).html('This offer has expired!')
-		.parent().addClass('disabled');
-    });
+	// $('#clock').countdown('2020/12/27 08:50:56') /* change here your "countdown to" date */
+	// .on('update.countdown', function(event) {
+	// 	var format = '<span class="counter-number">%D<br><span class="timer-text">Days</span></span><span class="counter-number">%H<br><span class="timer-text">Hours</span></span><span class="counter-number">%M<br><span class="timer-text">Minutes</span></span><span class="counter-number">%S<br><span class="timer-text">Seconds</span></span>';
+	// 	$(this).html(event.strftime(format));
+	// })
+	// .on('finish.countdown', function(event) {
+	// $(this).html('This offer has expired!')
+	// 	.parent().addClass('disabled');
+    // });
 
 
     /* Image Slider 2 - Swiper */
@@ -111,6 +111,25 @@
 
 
     /* Text Slider - Swiper */
+	var textSlider = new Swiper('.faculty-slider', {
+        autoplay: {
+            delay: 6000,
+            disableOnInteraction: false
+		},
+        loop: true,
+        navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev'
+        },
+        spaceBetween: 70,
+        slidesPerView: 1,
+		breakpoints: {
+            // when window is <= 1199px
+            1199: {
+                slidesPerView: 1,
+            },
+        }
+    });
 	var textSlider = new Swiper('.text-slider', {
         autoplay: {
             delay: 6000,
