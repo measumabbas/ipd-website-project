@@ -1,0 +1,27 @@
+.background{
+    position: relative;
+}
+
+.background img{
+    width: 100%;
+}
+
+.details img{
+    width: 100%;
+}
+
+.card{
+    background-color: #eee;
+}
+a{
+    text-decoration: none;
+}
+.card p{
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.course-details p{
+    color: #333;
+    font-weight: bold;
+}

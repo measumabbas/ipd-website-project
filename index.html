@@ -67,19 +67,63 @@
             <span class="navbar-toggler-awesome fas fa-times"></span>
         </button>
         <!-- end of mobile menu toggle button -->
-
+        
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav ml-auto">
+                
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#register">REGISTER</a>
+                    <a class="nav-link page-scroll" style="color: #148EBF;" href="/index.html">HOME</a>
                 </li>
+                <!-- <li class="nav-item about-link">
+                    <a class="nav-link page-scroll" href="#">ABOUT</a>
+        
+                    <ul class="about-drop">
+                        <li><a href="/aboutus.html" target="_blank">Want to Know about us ?</a></li>
+                        <li><a href="/team.html" target="_blank">Our Team Members</a></li>
+                        <li><a href="/instructors.html" target="_blank">Our Instructors</a></li>
+                        <li><a href="/success.html" target="_blank">Success Stories</a></li>
+                    </ul>
+                </li>
+                    <ul class="navbar-nav about-sub">
+                        <li class="nav-item">
+                            <a href="aboutus.html" class="nav-link">Want to Know about us ?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="aboutus.html" class="nav-link">Our Team Members</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="aboutus.html" class="nav-link">Our Instructors</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="aboutus.html" class="nav-link">Success Stories</a>
+                        </li>
+                    </ul> -->
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle page-scroll" href="#date" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">ABOUT</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="aboutus.html"><span class="item-text">Want To Know About Us ?</span></a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="team.html"><span class="item-text">Our Staff</span></a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="instructors.html"><span class="item-text">Our Instructors</span></a>
+                        </div>
+                    </li>
                 <li class="nav-item">
                     <a class="nav-link page-scroll" href="#description">DETAILS</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#courses">COURSES</a>
+                <li class="nav-item course-link">
+                    <a class="nav-link page-scroll" href="/courses.html" target="_blank">COURSES</a>
+                    <!-- <ul class="course-drop">
+                        <li><a href="/course-detail.html" target="_blank">Web Development</a></li>
+                        <li><a href="/course-detail.html" target="_blank">Web Design</a></li>
+                        <li><a href="/course-detail.html" target="_blank">Android App Development</a></li>
+                        <li><a href="/course-detail.html" target="_blank">IELTS Training</a></li>
+                        <li><a href="/course-detail.html" target="_blank">Chinese Language</a></li>
+                        <li><a href="/course-detail.html" target="_blank">Python Programming</a></li>
+                    </ul> -->
                 </li>
-
+                
                 <!-- Dropdown Menu -->          
                 <!-- end of dropdown menu -->
                 
@@ -87,7 +131,10 @@
                     <a class="nav-link page-scroll" href="#contact">CONTACT</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="/blog.html" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">BLOG</a>
+                    <a class="nav-link page-scroll" href="/blog.html" target="_blank" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">BLOG</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="/contact.html" target="_blank" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">CONTACT</a>
                 </li>
             </ul>
             <!-- <span class="nav-item social-icons">
@@ -168,70 +215,87 @@
     <!-- end of header -->
 
 
-    <!-- Registration -->
-    <div id="register" class="form-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="text-container">
-                        <h2>Register Using The Form</h2>
-                        <p>It's easy to register for our course, just fill out the form and click submit. Then you will be registered for one of the best Tech courses in GB</p>
-                        <ul class="list-unstyled li-space-lg">
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body"><strong>Your information</strong> is required to complete the registration</div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body"><strong>It's safe with us</strong> and will not be used for marketing</div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body"><strong>You will receive</strong> a confirmation email in less than 24h</div>
-                            </li>
-                        </ul>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-                <div class="col-lg-6">
-
-                    <!-- Registration Form -->
-                    <div class="form-container">
-                        <form id="registrationForm" data-toggle="validator" data-focus="false">
-                            <div class="form-group">
-                                <input type="text" class="form-control-input" id="rname" name="rname" required>
-                                <label class="label-control" for="rname">Complete name</label>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group">
-                                <input type="email" class="form-control-input" id="remail" name="remail" required>
-                                <label class="label-control" for="remail">Email address</label>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control-input" id="rphone" name="rphone" required>
-                                <label class="label-control" for="rphone">Phone number</label>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group checkbox">
-                                <input type="checkbox" id="rterms" value="Agreed-to-Terms" name="rterms" required>I've read and agree to Corso's written <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-conditions.html">Terms & Conditions</a>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group">
-                                <button type="submit" class="form-control-submit-button">REGISTER</button>
-                            </div>
-                            <div class="form-message">
-                                <div id="rmsgSubmit" class="h3 text-center hidden"></div>
-                            </div>
-                        </form>
-                    </div> <!-- end of form-container -->
-                    <!-- end of registration form -->
-                    
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of form-1 -->
+   <!-- Students -->
+   <div class="basic-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="text-container">
+                    <h2>Who Should Register to our Courses</h2>
+                    <p>This course is for anyone passionate about the web and especially fit for those seeking to improve their online presence for company websites and blogs </p>
+                    <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox">SEE MORE</a>
+                </div> <!-- end of text-container -->
+            </div> <!-- end of col -->
+            <div class="col-lg-6">
+                <img class="img-fluid" src="images/students.jpg" alt="alternative">
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</div> <!-- end of basic-3 -->
     <!-- end of registration -->
-
+ <!-- Description -->
+ <div id="description" class="basic-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>We Offer Quality training in the following</h2>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+        <div class="row">
+            <div class="col-lg-6">
+                <ul class="list-unstyled li-space-lg first">
+                    <li class="media">
+                        <i class="bullet">1</i>
+                        <div class="media-body">
+                            <h4>Web Development</h4>
+                            <p>Web development is the work involved in developing a website for the Internet or an intranet. Web development can range from developing a simple single static page of plain text to complex web applications,</p>
+                        </div>
+                    </li>
+                    <li class="media">
+                        <i class="bullet">2</i>
+                        <div class="media-body">
+                            <h4>Web Designing</h4>
+                            <p>Web design refers to the design of websites that are displayed on the internet. It usually refers to the user experience aspects of website development rather than software development. </p>
+                        </div>
+                    </li>
+                    <li class="media">
+                        <i class="bullet">3</i>
+                        <div class="media-body">
+                            <h4>Android App Development</h4>
+                            <p>An android developer designs software and applications for Android devices and the Google Play Store. This software developer creates apps used on Android phones and tablets.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div> <!-- end of col -->
+            <div class="col-lg-6">
+                <ul class="list-unstyled li-space-lg second">
+                    <li class="media">
+                        <i class="bullet">4</i>
+                        <div class="media-body">
+                            <h4>IELTS training</h4>
+                            <p>The International English Language Testing System, is an international standardized test of English language proficiency for non-native English language speakers. It is jointly managed by the British Council,</p>
+                        </div>
+                    </li>
+                    <li class="media">
+                        <i class="bullet">5</i>
+                        <div class="media-body">
+                            <h4>Chinese Language</h4>
+                            <p>Chinese is a group of languages that form the Sinitic branch of the Sino-Tibetan languages family, spoken by the ethnic Han Chinese majority and many minority ethnic groups in Greater China. </p>
+                        </div>
+                    </li>
+                    <li class="media">
+                        <i class="bullet">6</i>
+                        <div class="media-body">
+                            <h4>Python Basics</h4>
+                            <p>Python is a high-level, interpreted, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation. Python is dynamically-typed and garbage-collected</p>
+                        </div>
+                    </li>
+                </ul>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</div> <!-- end of basic-2 -->
+<!-- end of description -->
 
     <!-- Partners -->
     
@@ -255,224 +319,17 @@
             </div>
         </div> 
     </div>  -->
-    <div class="slider-2" style="padding-top: 100px;">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h3 style='font: 700 2.25rem/2.875rem "Montserrat", sans-serif;'>Check out our Trainers and their experience in their fields</h3>
-                    <div class="slider-container">
-                        <div class="swiper-container faculty-slider">
-                            <div class="swiper-wrapper">
-                                
-                                
-                                <div class="swiper-slide">
-                                    <div id="instructor" class="basic-1">
-                                        <div class="container">
-                                            <div class="row">
-                                                <div class="col-lg-6">
-                                                    <img class="img-fluid" src="images/instructor.jpg" alt="alternative">
-                                                </div>
-                                                <div class="col-lg-6">
-                                                    <div class="text-container">
-                                                        <h2>Naeem Hussain <br> <small class="text-muted">Web Development</small></h2>
-                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt explicabo tempore mollitia, perferendis inventore recusandae id nesciunt fugit odio architecto voluptates modi iure obcaecati quaerat. Ipsam, quas. Modi, quis quaerat ullam provident ducimus veniam quos quidem laborum adipisci accusamus! Labore fugit magnam blanditiis obcaecati. Asperiores totam impedit rem nesciunt commodi.</p>
-                                                    </div>
-                                                </div> 
-                                            </div>
-                                        </div> 
-                                    </div> 
-                                </div> 
-                                <div class="swiper-slide">
-                                    <div id="instructor" class="basic-1">
-                                        <div class="container">
-                                            <div class="row">
-                                                <div class="col-lg-6">
-                                                    <img class="img-fluid" src="images/instructor.jpg" alt="alternative">
-                                                </div>
-                                                <div class="col-lg-6">
-                                                    <div class="text-container">
-                                                        <h2>Essa Wali <br> <small class="text-muted">WordPress</small></h2>
-                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt explicabo tempore mollitia, perferendis inventore recusandae id nesciunt fugit odio architecto voluptates modi iure obcaecati quaerat. Ipsam, quas. Modi, quis quaerat ullam provident ducimus veniam quos quidem laborum adipisci accusamus! Labore fugit magnam blanditiis obcaecati. Asperiores totam impedit rem nesciunt commodi.</p>
-                                                    </div>
-                                                </div> 
-                                            </div>
-                                        </div> 
-                                    </div> 
-                                </div> 
-                                <div class="swiper-slide">
-                                    <div id="instructor" class="basic-1">
-                                        <div class="container">
-                                            <div class="row">
-                                                <div class="col-lg-6">
-                                                    <img class="img-fluid" src="images/instructor.jpg" alt="alternative">
-                                                </div>
-                                                <div class="col-lg-6">
-                                                    <div class="text-container">
-                                                        <h2>Rashid Mehmood <br> <small class="text-muted">Chinese Language</small></h2>
-                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt explicabo tempore mollitia, perferendis inventore recusandae id nesciunt fugit odio architecto voluptates modi iure obcaecati quaerat. Ipsam, quas. Modi, quis quaerat ullam provident ducimus veniam quos quidem laborum adipisci accusamus! Labore fugit magnam blanditiis obcaecati. Asperiores totam impedit rem nesciunt commodi.</p>
-                                                    </div>
-                                                </div> 
-                                            </div>
-                                        </div> 
-                                    </div> 
-                                </div> 
-                                <div class="swiper-slide">
-                                    <div id="instructor" class="basic-1">
-                                        <div class="container">
-                                            <div class="row">
-                                                <div class="col-lg-6">
-                                                    <img class="img-fluid" src="images/instructor.jpg" alt="alternative">
-                                                </div>
-                                                <div class="col-lg-6">
-                                                    <div class="text-container">
-                                                        <h2>Ghulam Hhussain <br> <small class="text-muted">Python</small></h2>
-                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt explicabo tempore mollitia, perferendis inventore recusandae id nesciunt fugit odio architecto voluptates modi iure obcaecati quaerat. Ipsam, quas. Modi, quis quaerat ullam provident ducimus veniam quos quidem laborum adipisci accusamus! Labore fugit magnam blanditiis obcaecati. Asperiores totam impedit rem nesciunt commodi.</p>
-                                                    </div>
-                                                </div> 
-                                            </div>
-                                        </div> 
-                                    </div> 
-                                </div> 
-                            </div>
-                            
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
-
-                        </div> 
-                    </div> 
-
-                </div> 
-            </div> 
-        </div> 
-    </div>
+   
 
 
-    <!-- Description -->
-    <div id="description" class="basic-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2>We Offer Quality training in the following</h2>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-6">
-                    <ul class="list-unstyled li-space-lg first">
-                        <li class="media">
-                            <i class="bullet">1</i>
-                            <div class="media-body">
-                                <h4>Web Development</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit adipisci harum quisquam repellendus perferendis dicta, non architecto soluta et alias.</p>
-                            </div>
-                        </li>
-                        <li class="media">
-                            <i class="bullet">2</i>
-                            <div class="media-body">
-                                <h4>Web Designing</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit adipisci harum quisquam repellendus perferendis dicta, non architecto soluta et alias. </p>
-                            </div>
-                        </li>
-                        <li class="media">
-                            <i class="bullet">3</i>
-                            <div class="media-body">
-                                <h4>Android App Development</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit adipisci harum quisquam repellendus perferendis dicta, non architecto soluta et alias.</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div> <!-- end of col -->
-                <div class="col-lg-6">
-                    <ul class="list-unstyled li-space-lg second">
-                        <li class="media">
-                            <i class="bullet">4</i>
-                            <div class="media-body">
-                                <h4>IELTS training</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit adipisci harum quisquam repellendus perferendis dicta, non architecto soluta et alias.</p>
-                            </div>
-                        </li>
-                        <li class="media">
-                            <i class="bullet">5</i>
-                            <div class="media-body">
-                                <h4>Chinese Language</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit adipisci harum quisquam repellendus perferendis dicta, non architecto soluta et alias.</p>
-                            </div>
-                        </li>
-                        <li class="media">
-                            <i class="bullet">6</i>
-                            <div class="media-body">
-                                <h4>Python Basics</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit adipisci harum quisquam repellendus perferendis dicta, non architecto soluta et alias.</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of basic-2 -->
-    <!-- end of description -->
+   
 
 
-    <!-- Students -->
-    <div class="basic-3">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="text-container">
-                        <h2>Who Should Register to our Courses</h2>
-                        <p>This course is for anyone passionate about the web and especially fit for those seeking to improve their online presence for company websites and blogs </p>
-                        <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox">SEE MORE</a>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-                <div class="col-lg-6">
-                    <img class="img-fluid" src="images/students.jpg" alt="alternative">
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of basic-3 -->
+    
     <!-- end of students -->
 
 
-    <!-- Details Lightbox -->
-	<div id="details-lightbox" class="lightbox-basic zoom-anim-dialog mfp-hide">
-        <div class="container">
-            <div class="row">
-                <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-                <div class="col-lg-8">
-                    <div class="image-container">
-                        <img class="img-fluid" src="images/details-lightbox.jpg" alt="alternative">
-                    </div> <!-- end of image-container -->
-                </div> <!-- end of col -->
-                <div class="col-lg-4">
-                    <h3>SEO Training Course</h3>
-                    <hr>
-                    <h5>For everybody</h5>
-                    <p>The training course is dedicates to anyone passionate about the web and in need of improving their current online presence.</p>
-                    <ul class="list-unstyled li-space-lg">
-                        <li class="media">
-                            <i class="fas fa-square"></i><div class="media-body">Link building framework</div>
-                        </li>
-                        <li class="media">
-                            <i class="fas fa-square"></i><div class="media-body">Know your current position</div>
-                        </li>
-                        <li class="media">
-                            <i class="fas fa-square"></i><div class="media-body">Partnering with blogs</div>
-                        </li>
-                        <li class="media">
-                            <i class="fas fa-square"></i><div class="media-body">Naming your images</div>
-                        </li>
-                        <li class="media">
-                            <i class="fas fa-square"></i><div class="media-body">Creating good sitemaps</div>
-                        </li>
-                        <li class="media">
-                            <i class="fas fa-square"></i><div class="media-body">Writing for humans</div>
-                        </li>
-                    </ul>
-                    <a class="btn-solid-reg mfp-close page-scroll" href="#register">SIGN UP</a> <a class="btn-outline-reg mfp-close as-button" href="#screenshots">BACK</a>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of lightbox-basic -->
-    <!-- end of details lightbox -->
+  
 
 
     <!-- Video -->
@@ -480,7 +337,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2>Course Video Presentation</h2>
+                    <h2>Message From Director IPD</h2>
 
                     <!-- Video Preview -->
                     <div class="image-container">
@@ -502,97 +359,7 @@
     <!-- end of video -->
 
 
-    <!-- Takeaways -->
-    <div class="cards" id="courses">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2>Courses We Offer</h2>
-                    <p class="p-heading">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim harum quod explicabo omnis! Ad eligendi ullam quidem ab ea? Ad ex aut magnam distinctio commodi sint, facilis corporis minus at!</p>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-12">
-
-                    <!-- Card -->
-                    <div class="card">
-                        <div class="card-image">
-                            <img class="card-img-top" src="/images/slider-images/slider-image-6.jpg" alt="">
-                        </div>
-                        <div class="card-body">
-                            <h4 class="card-title">Learn Chinese</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, dignissimos.</p>
-                        </div>
-                    </div>
-                    <!-- end of card -->
-
-                    <!-- Card -->
-                    <div class="card">
-                        <div class="card-image">
-                            <img class="card-img-top" src="/images/slider-images/slider-image-2.jpg" alt="">
-                        </div>
-                        <div class="card-body">
-                            <h4 class="card-title">Web Development</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, nemo.</p>
-                        </div>
-                    </div>
-                    <!-- end of card -->
-
-
-                    <!-- Card -->
-                    <div class="card">
-                        <div class="card-image">
-                            <img class="card-img-top" src="/images/slider-images/slider-image-3.jpg" alt="">
-                        </div>
-                        <div class="card-body">
-                            <h4 class="card-title">Graphic Design</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, eius?</p>
-                        </div>
-                    </div>
-                    <!-- end of card -->
-
-                    <!-- Card -->
-                    <div class="card">
-                        <div class="card-image">
-                            <img class="card-img-top" src="/images/slider-images/slider-image-4.jpg" alt="">
-                        </div>
-                        <div class="card-body">
-                            <h4 class="card-title">IELTS Training</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, deleniti.</p>
-                        </div>
-                    </div>
-                    <!-- end of card -->
-
-                    <!-- Card -->
-                    <div class="card">
-                        <div class="card-image">
-                            <img class="card-img-top" src="/images/slider-images/slider-image-1.jpg" alt="">
-                        </div>
-                        <div class="card-body">
-                            <h4 class="card-title">Android app Development</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, nihil.</p>
-                        </div>
-                    </div>
-                    <!-- end of card -->
-
-
-                    <!-- Card -->
-                    <div class="card">
-                        <div class="card-image">
-                            <img class="card-img-top" src="/images/slider-images/slider-image-5.jpg" alt="">
-                        </div>
-                        <div class="card-body">
-                            <h4 class="card-title">Python Programming</h4>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum, alias?</p>
-                        </div>
-                    </div>
-                    <!-- end of card -->
-                    
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of cards -->
-    <!-- end of takeaways -->
+    
 
 
     <!-- Testimonials -->
@@ -610,7 +377,7 @@
                                         <img class="img-fluid" src="/images/testimonial-3.jpg" alt="alternative">
                                     </div>
                                     <div class="text-wrapper">
-                                        <div class="testimonial-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis labore beatae aperiam reprehenderit tempora. Cum cumque aliquid eaque. Labore, sunt!
+                                        <div class="testimonial-text">Very interesting course, better done when in an academic context and with an ongoing project to carry out the exercices for. If you don't have access to a university library.
                                         </div>
                                         <div class="testimonial-author">Measum Abbas - Web Developer</div>
                                     </div> 
@@ -620,7 +387,7 @@
                                         <img class="img-fluid" src="images/testimonial-2.jpg" alt="alternative">
                                     </div> 
                                     <div class="text-wrapper">
-                                        <div class="testimonial-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis labore beatae aperiam reprehenderit tempora. Cum cumque aliquid eaque. Labore, sunt!</div>
+                                        <div class="testimonial-text">This course has taught me a lot of techniques in searching information for my  academic researches. Thank you to all people behind this, especially to the professors in this course! </div>
                                         <div class="testimonial-author">Ammar Ali - UI/UX Designer</div>
                                     </div> 
                                 </div> 
@@ -629,7 +396,7 @@
                                         <img class="img-fluid" src="images/testimonial-3.jpg" alt="alternative">
                                     </div> 
                                     <div class="text-wrapper">
-                                        <div class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non eaque consequatur quia commodi error fugiat eum voluptatibus optio perferendis corporis.</div>
+                                        <div class="testimonial-text">I have built a real, properly-looking and functional, responsive website! The first ever in my life. So, this is a truly empowering course (after completing all the rest in the spec, of course.</div>
                                         <div class="testimonial-author">Hasnain Abbas - Backend Developer</div>
                                     </div> 
                                 </div> 
@@ -638,7 +405,7 @@
                                         <img class="img-fluid" src="images/testimonial-4.jpg" alt="alternative">
                                     </div> 
                                     <div class="text-wrapper">
-                                        <div class="testimonial-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ea et debitis quas atque consequuntur repellat. Consequatur quibusdam itaque accusamus!</div>
+                                        <div class="testimonial-text">no words to thank collen van I was completely at zero level before taking this course mow  i'm able to create pages ,I surely recommend you to not wait to tale this course</div>
                                         <div class="testimonial-author">Ronda Louis - Business Owner</div>
                                     </div> 
                                 </div> 
@@ -662,9 +429,9 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="text-container">
-                        <h2>March 22nd 2020 Orientation session</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id perferendis sed non veniam, a atque? Ducimus, aperiam quidem dolor odit magni cum soluta illo totam natus expedita accusamus ex obcaecati enim! Rem commodi distinctio quis cum possimus ipsa iusto excepturi!</p>
-                        <a class="btn-solid-lg page-scroll" href="#register">REGISTER</a>
+                        <h2>March 22nd 2022 Orientation session</h2>
+                        <p>Our Orientation session for our new badge will be held on March 22nd 20222 and then classes will be started after a week , hurry up and get registered on any course to gain important skills in tech.</p>
+                        <a class="btn-solid-lg page-scroll" href="/register.html">REGISTER</a>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -735,6 +502,8 @@
             </div> 
         </div> 
     </div>  -->
+
+
     <div class="slider-1">
         <div class="container">
             <div class="row">
@@ -749,22 +518,25 @@
                                         <img class="img-fluid" src="/images/partners/1.jpg" alt="alternative">
                                 </div>
                                 <div class="swiper-slide">
-                                        <img class="img-fluid" src="/images/partners/2.png" alt="alternative">
+                                        <img class="img-fluid" src="/images/partners/2.jpg" alt="alternative">
                                 </div>
                                 <div class="swiper-slide">
                                         <img class="img-fluid" src="/images/partners/3.jpg" alt="alternative">
                                 </div>
                                 <div class="swiper-slide">
-                                        <img class="img-fluid" src="/images/partners/4.png" alt="alternative">
+                                        <img class="img-fluid" src="/images/partners/4.jpg" alt="alternative">
                                 </div>
                                 <div class="swiper-slide">
-                                        <img class="img-fluid" src="/images/partners/5.png" alt="alternative">
+                                        <img class="img-fluid" src="/images/partners/5.jpg" alt="alternative">
                                 </div>
                                 <div class="swiper-slide">
                                         <img class="img-fluid" src="/images/partners/6.jpg" alt="alternative">
                                 </div>
                                 <div class="swiper-slide">
-                                        <img class="huwawei" src="/images/partners/7.png" alt="alternative">
+                                        <img class="huwawei" src="/images/partners/7.jpg" alt="alternative">
+                                </div>
+                                <div class="swiper-slide">
+                                        <img class="huwawei" src="/images/partners/8.jpg" alt="alternative">
                                 </div>
                             </div> 
                         </div> 
@@ -777,69 +549,8 @@
     </div> 
 
 
-    <!-- Contact -->
-    <div id="contact" class="form-3">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="text-container">
-                        <h2>Contact Details</h2>
-                        <p>For registration questions please get in touch using the contact details below. For any questions use the form.</p>
-                        <h3>Main Office Location</h3>
-                        <ul class="list-unstyled li-space-lg">
-                            <li class="media">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <div class="media-body">Near Karakoram Internationla University GB</div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-mobile-alt"></i>
-                                <div class="media-body">035551231234, &nbsp;&nbsp;<i class="fas fa-mobile-alt"></i>&nbsp; 035551231234</div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-envelope"></i>
-                                <div class="media-body"><a class="light-gray" href="mailto:contact@zigo.com">ipd@gmail.com</a> <i class="fas fa-globe"></i><a class="light-gray" href="#your-link">www.ipd.kiu,edu.pk</a></div>
-                            </li>
-                        </ul>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-                <div class="col-lg-6">
 
-                    <!-- Contact Form -->
-                    <form id="contactForm" data-toggle="validator" data-focus="false">
-                        <div class="form-group">
-                            <input type="text" class="form-control-input" id="cname" required>
-                            <label class="label-control" for="cname">Name</label>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control-input" id="cemail" required>
-                            <label class="label-control" for="cemail">Email</label>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control-textarea" id="cmessage" required></textarea>
-                            <label class="label-control" for="cmessage">Your message</label>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group checkbox">
-                            <input type="checkbox" id="cterms" value="Agreed-to-Terms" required>I have read and agree to Corso's stated <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-conditions.html">Terms Conditions</a> 
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group">
-                            <button type="submit" class="form-control-submit-button">SUBMIT</button>
-                        </div>
-                        <div class="form-message">
-                            <div id="cmsgSubmit" class="h3 text-center hidden"></div>
-                        </div>
-                    </form>
-                    <!-- end of contact form -->
-
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of form-3 -->
-    <!-- end of contact -->
-
+       
 
     <!-- Footer -->
     <div class="footer">
@@ -847,8 +558,8 @@
             <div class="row">
                 <div class="col-md-3">
                     <div class="footer-col first">
-                        <h5>About IPD</h5>
-                        <p class="p-small">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non, debitis.</p>
+                        <h5>IPD</h5>
+                        <p class="p-small">Institute of professional development KIU</p>
                     </div>
                 </div> <!-- end of col -->
                 <div class="col-md-3">
@@ -942,5 +653,6 @@
     <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
     <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
     <script src="js/scripts.js"></script> <!-- Custom scripts -->
+    <script src="/js/index.js"></script>
 </body>
 </html>
