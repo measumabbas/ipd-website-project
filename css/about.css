@@ -38,3 +38,7 @@
 .text h2 span{
     color: #148EBF;
 }
+
+.overlay{
+    background-color: rgba(0,0,0,0.8);
+}
