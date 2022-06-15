@@ -130,6 +130,25 @@
             },
         }
     });
+	var textSlider = new Swiper('.faculty-slider-2', {
+        autoplay: {
+            delay: 6000,
+            disableOnInteraction: false
+		},
+        loop: true,
+        navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev'
+        },
+        spaceBetween: 70,
+        slidesPerView: 2,
+		breakpoints: {
+            // when window is <= 1199px
+            1199: {
+                slidesPerView: 1,
+            },
+        }
+    });
 	var textSlider = new Swiper('.text-slider', {
         autoplay: {
             delay: 6000,
@@ -149,6 +168,8 @@
             },
         }
     });
+    
+
     
 
     /* Video Lightbox - Magnific Popup */
@@ -456,3 +477,30 @@
     
 })(jQuery);
 
+const counters = document.querySelectorAll('.counter')
+
+console.log(counters);
+let speed = 200;
+counters.forEach(counter =>{
+
+    
+
+    const updateCount = ()=>{
+        const target = +counter.getAttribute('data-target');
+        // console.log(limit);
+        let count = +counter.innerText;
+        let inc = target/speed;
+        // console.log(value);
+        if(count < target){
+            counter.innerText=count+inc;
+            setTimeout(updateCount,50);
+        }else{
+            count.innerText = target;
+        }
+    }
+
+    updateCount();
+    
+
+
+});

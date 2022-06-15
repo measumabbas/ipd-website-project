@@ -754,7 +754,17 @@ input[type='checkbox'] {
 	border-radius: 0.25rem;
 	background-color: #fff;
 }
-
+.ins-row{
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+	align-items: center;
+	justify-content: center;
+}
+.ins-row img{
+	width: 300px;
+	height: 300px;
+}
 .navbar-custom .dropdown-item {
 	color: #333;
 	text-decoration: none;

@@ -28,6 +28,7 @@
     <link href="css/swiper.css" rel="stylesheet">
 	<link href="css/magnific-popup.css" rel="stylesheet">
 	<link href="css/styles.css" rel="stylesheet">
+	<link href="css/counter.css" rel="stylesheet">
 	
 	<!-- Favicon  -->
     <link rel="icon" href="images/favicon.png">
@@ -100,7 +101,7 @@
                     </ul> -->
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle page-scroll" href="#date" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">ABOUT</a>
+                        <a class="nav-link dropdown-toggle page-scroll" href="#" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">ABOUT</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="aboutus.html"><span class="item-text">Want To Know About Us ?</span></a>
                             <div class="dropdown-divider"></div>
@@ -109,27 +110,11 @@
                             <a class="dropdown-item" href="instructors.html"><span class="item-text">Our Instructors</span></a>
                         </div>
                     </li>
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#description">DETAILS</a>
-                </li>
                 <li class="nav-item course-link">
                     <a class="nav-link page-scroll" href="/courses.html" target="_blank">COURSES</a>
-                    <!-- <ul class="course-drop">
-                        <li><a href="/course-detail.html" target="_blank">Web Development</a></li>
-                        <li><a href="/course-detail.html" target="_blank">Web Design</a></li>
-                        <li><a href="/course-detail.html" target="_blank">Android App Development</a></li>
-                        <li><a href="/course-detail.html" target="_blank">IELTS Training</a></li>
-                        <li><a href="/course-detail.html" target="_blank">Chinese Language</a></li>
-                        <li><a href="/course-detail.html" target="_blank">Python Programming</a></li>
-                    </ul> -->
                 </li>
                 
-                <!-- Dropdown Menu -->          
-                <!-- end of dropdown menu -->
-                
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#contact">CONTACT</a>
-                </li>
+
                 <li class="nav-item">
                     <a class="nav-link page-scroll" href="/blog.html" target="_blank" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">BLOG</a>
                 </li>
@@ -137,20 +122,6 @@
                     <a class="nav-link page-scroll" href="/contact.html" target="_blank" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">CONTACT</a>
                 </li>
             </ul>
-            <!-- <span class="nav-item social-icons">
-                <span class="fa-stack">
-                    <a href="#your-link" class="top-links">
-                        <i class="fas fa-circle fa-stack-2x"></i>
-                        <i class="fab fa-facebook-f fa-stack-1x"></i>
-                    </a>
-                </span>
-                <span class="fa-stack">
-                    <a href="#your-link" class="top-links">
-                        <i class="fas fa-circle fa-stack-2x"></i>
-                        <i class="fab fa-twitter fa-stack-1x"></i>
-                    </a>
-                </span>
-            </span> -->
         </div>
     </nav> <!-- end of navbar -->
     <!-- end of navigation -->
@@ -213,7 +184,34 @@
 
     </header> <!-- end of header -->
     <!-- end of header -->
+    <section class="counters">
+        <div class="container">
+            <div class="counts">
 
+                <div class="count-item">
+                    <i class="fas fa-code"></i>
+                    <div class="counter" data-target='60000'>0</div>
+                    <h3>Students</h3>
+                </div>
+                <div class="count-item">
+                    
+                    <i class="fas fa-graduation-cap"></i>
+                    <div class="counter" data-target='15000'>0</div>
+                    <h3>Graduates</h3>
+                </div>
+                <div class="count-item">
+                    <i class="fas fa-clipboard-check"></i>
+                    <div class="counter" data-target='9000'>0</div>
+                    <h3>Success Stories</h3>
+                </div>
+                <div class="count-item">
+                    <i class="fas fa-school"></i>
+                    <div class="counter" data-target='50000'>0</div>
+                    <h3>Courses</h3>
+                </div>
+            </div>
+        </div>
+    </section>
 
    <!-- Students -->
    <div class="basic-3">
@@ -439,69 +437,83 @@
     </div> <!-- end of basic-5 -->
     <!-- end of date -->
 
-
-    <!-- Newsletter -->
-    <!-- <div class="form-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h3>Stay updated with news by subscribing to our newsletter and our social channels</h3>
-                    
-                   
-                    <form id="newsletterForm" data-toggle="validator" data-focus="false">
-                        <div class="form-group">
-                            <input type="email" class="form-control-input" id="nemail" required>
-                            <label class="label-control" for="nemail">Email</label>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group checkbox">
-                            <input type="checkbox" id="nterms" value="Agreed-to-Terms" required>I've read and agree to Corso's written <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-conditions.html">Terms Conditions</a> 
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group">
-                            <button type="submit" class="form-control-submit-button">SIGN UP</button>
-                        </div>
-                        <div class="form-message">
-                            <div id="nmsgSubmit" class="h3 text-center hidden"></div>
-                        </div>
-                    </form>
-
-                    <div class="icon-container">
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-facebook-f fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-twitter fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-pinterest-p fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-instagram fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-linkedin-in fa-stack-1x"></i>
-                            </a>
-                        </span>
-                    </div>
-                </div>
+    <section class="success-stories">
+        <div class="slider-2" style="padding-top: 100px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h3 style='font: 700 2.25rem/2.875rem "Montserrat", sans-serif;'>Our Success Stories </h3>
+                        <div class="slider-container">
+                            <div class="swiper-container faculty-slider-2">
+                                <div class="swiper-wrapper">
+                                    
+                                    
+                                    <div class="swiper-slide">
+                                        <div id="instructor" class="basic-1">
+                                            <div class="ins-container">
+                                                <div class="ins-row">
+                                                        <img class="img-fluid" src="images/courses/Profile Card.jpg" alt="alternative">
+                                                        <div  class="ins-text">
+                                                            <h2>Naeem Hussain <br> <small class="text-muted">Web Development</small></h2>
+                                                            <p>Naeem Hussain is a Visiting Lecturer at Karakoram International University, where he teaches various technology-oriented courses including programming, database design, and Web development. Naeem has written a number of books including Using Google App Engine, and Python for Everybody.</p>
+                                                        </div>
+                                                </div>
+                                            </div> 
+                                        </div> 
+                                    </div> 
+                                    <div class="swiper-slide">
+                                        <div id="instructor" class="basic-1">
+                                            <div class="ins-container">
+                                                <div class="ins-row">
+                                                        <img class="img-fluid" src="images/courses/AMMAR.jpg" alt="alternative">
+                                                        <div class="ins-text">
+                                                            <h2>Ammar Ali <br> <small class="text-muted">Graphic Designer</small></h2>
+                                                            <p>Ammar Ali is a Visiting Lecturer at Karakoram International University, where he teaches various technology-oriented courses including programming, database design, and Web development. Ammar has written a number of books including Using Google App Engine, and Python for Everybody.</p>
+                                                        </div>
+                                                </div>
+                                            </div> 
+                                        </div> 
+                                    </div> 
+                                    <div class="swiper-slide">
+                                        <div id="instructor" class="basic-1">
+                                            <div class="ins-container">
+                                                <div class="ins-row">
+                                                        <img class="img-fluid" src="images/courses/CHINESE.jpg" alt="alternative">
+                                                        <div  class="ins-text">
+                                                            <h2>Rashid Mehmood <br> <small class="text-muted">Chinese Language</small></h2>
+                                                            <p>Rashid Mehmood is a Visiting Lecturer at Karakoram International University, where he teaches various technology-oriented courses including programming, database design, and Web development. Rashid has written a number of books including Using Google App Engine, and Python for Everybody.</p>
+                                                        </div>
+                                                </div>
+                                            </div> 
+                                        </div> 
+                                    </div> 
+                                    <div class="swiper-slide">
+                                        <div id="instructor" class="basic-1">
+                                            <div class="container">
+                                                <div class="ins-row">
+                                                        <img class="img-fluid" src="images/courses/GH.jpg" alt="alternative">
+                                                        <div class="ins-text">
+                                                            <h2>Ghulam Hhussain <br> <small class="text-muted">Python</small></h2>
+                                                            <p>Ghulam Hussain is a Visiting Lecturer at Karakoram International University, where he teaches various technology-oriented courses including programming, database design, and Web development. Ghulam has written a number of books including Using Google App Engine, and Python for Everybody.</p>
+                                                        </div>
+                                                </div>
+                                            </div> 
+                                        </div> 
+                                    </div> 
+                                </div>
+                                
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+        
+                            </div> 
+                        </div> 
+        
+                    </div> 
+                </div> 
             </div> 
-        </div> 
-    </div>  -->
+        </div>
+    
+    </section>
 
 
     <div class="slider-1">
@@ -568,15 +580,15 @@
                         <ul class="list-unstyled li-space-lg p-small">
                             <li class="media">
                                 <i class="fas fa-square"></i>
-                                <div class="media-body"><a href="#">Terms & Conditions</a></div>
+                                <div class="media-body"><a target="_blank" href="https://www.kiu.edu.pk/">KIU</a></div>
                             </li>
                             <li class="media">
                                 <i class="fas fa-square"></i>
-                                <div class="media-body"><a href="#">Privacy Policy</a></div>
+                                <div class="media-body"><a target="_blank" href="https://navttc.gov.pk/">NAVTAC</a></div>
                             </li>
                             <li class="media">
                                 <i class="fas fa-square"></i>
-                                <div class="media-body"><a href="#">Article Details</a></div>
+                                <div class="media-body"><a target="_blank" href="blog.html">Blogs</a></div>
                             </li>
                         </ul>
                     </div>
@@ -587,15 +599,15 @@
                         <ul class="list-unstyled li-space-lg p-small">
                             <li class="media">
                                 <i class="fas fa-square"></i>
-                                <div class="media-body"><a href="#">Article Details</a></div>
+                                <div class="media-body"><a target="_blank" href="contact.html">Contact Us</a></div>
                             </li>
                             <li class="media">
                                 <i class="fas fa-square"></i>
-                                <div class="media-body"><a href="#">Terms & Conditions</a></div>
+                                <div class="media-body"><a target="_blank" href="courses.html">Courses</a></div>
                             </li>
                             <li class="media">
                                 <i class="fas fa-square"></i>
-                                <div class="media-body"><a href="#">Privacy Policy</a></div>
+                                <div class="media-body"><a target="_blank" href="index.html">Home</a></div>
                             </li>
                         </ul>
                     </div>
